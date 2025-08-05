@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Bahij-Light";
+  src: url("../../assets/fonts/Bahij-SemiLight.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.letter-card {
+  margin-left: 150px;
+  text-align: left;
+}
+
+.image-card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-textarea {
+  position: absolute;
+  top: 70px;
+  left: 25px;
+  right: 25px;
+  height: calc(1.5em * 6);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  font-size: 20px;
+  font-weight: 600;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Bahij-Light", sans-serif;
+  line-height: 1.5em;
+  overflow-y: auto;
+  color: #454545;
+  background: transparent;
+}
+
+.card-textarea::placeholder {
+  color: #8f8f8f;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.card-footer {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-family: "Bahij-Light", sans-serif;
+  font-weight: 100;
+  color: #636363;
+}
+
+.card-footer.to.pinks {
+  color: #d05d94;
+}
+.card-footer.to.purples {
+  color: #855fac;
+}
+.card-footer.to.blues {
+  color: #5d7db8;
+}
+.card-footer.to.peachs {
+  color: #c57979;
+}
+.card-footer.to.greens {
+  color: #58d5b2;
+}
+.card-footer.to.greys {
+  color: #988f93;
+}
+@media (max-width: 1224px) {
+  .letter-card {
+    margin-left: -580px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .letter-card {
+    margin-left: -510px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .letter-card {
+    margin-left: -430px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .letter-card {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+  }
+
+  .image-card {
+    width: 280px;
+    height: 280px;
+  }
+
+  .card-textarea {
+    top: 50px;
+    left: 15px;
+    right: 15px;
+    font-size: 16px;
+    height: calc(1.5em * 5);
+    padding: 8px;
+  }
+
+  .card-footer {
+    top: 210px;
+    left: 18px;
+    font-size: 14px;
+  }
+}

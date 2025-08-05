@@ -1,0 +1,119 @@
+.write-letter-btn {
+  width: 530px;
+  margin-top: 30px;
+  font-family: "Inter", sans-serif;
+  padding: 14px 46px;
+  border: none;
+  border-radius: 32px;
+  background-color: #ffd573;
+  font-size: 18px;
+  color: #454545;
+  cursor: pointer;
+
+  /* ✅ This is what you want */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.write-letter-btn.disabled {
+  background-color: #ffe7af;
+  color: #afafaf;
+  cursor: not-allowed;
+}
+
+.write-letter-btn.enabled {
+  background-color: #ffd573;
+  color: #454545;
+}
+
+.write-letter-btn.enabled:hover {
+  background-color: #ffce5c;
+}
+
+.share-btn-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-msg {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #fff0f6;
+  color: #b84d65;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.loading-icon {
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @media (max-width: 768px) {
+  .write-letter-btn {
+    width: 100%;
+    max-width: 95%;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .tooltip-msg {
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    padding: 5px 8px;
+    white-space: normal;
+    max-width: 90vw;
+  }
+
+  .loading-icon {
+    width: 18px;
+    height: 18px;
+  }
+} */
+@media (max-width: 768px) {
+  .write-letter-btn {
+    width: 400px;
+    font-size: 16px;
+    padding: 12px 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .write-letter-btn {
+    width: 320px;
+    font-size: 15px;
+    padding: 10px 32px;
+  }
+}
+
+@media (max-width: 375px) {
+  .write-letter-btn {
+    width: 280px;
+    font-size: 14px;
+    padding: 10px 28px;
+  }
+}
+
+@media (max-width: 320px) {
+  .write-letter-btn {
+    width: 240px;
+    font-size: 13px;
+    padding: 8px 24px;
+  }
+}

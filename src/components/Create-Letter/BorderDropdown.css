@@ -1,0 +1,401 @@
+/* .custom-dropdown {
+  position: relative;
+  width: 250px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.dropdown-toggle {
+  background: #fff;
+  border-radius: 30px;
+  padding: 4px 14px;
+  width: 500px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 500px;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 10px 16px;
+  
+  z-index: 10;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #454545;
+  font-family: "Tajawal", sans-serif;
+}
+
+.border-style {
+  margin-top: 30px;
+}
+
+.selected-card {
+  border: solid 1px #bfbfbf;
+  border-radius: 30px;
+  padding: 4px 10px;
+  margin-left: 2px;
+  font-size: 20px;
+  color: #636363;
+}
+
+.border-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center; 
+}
+
+.border-option {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Tajawal", sans-serif;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.border-option:hover {
+  background-color: #f3f0f9;
+}
+
+.card-borders {
+  display: flex;
+  justify-content: center;
+  gap: 60px; 
+  margin-top: 10px;
+}
+
+.card-borders img {
+  width: 100px; 
+  height: auto;
+}
+
+.arrow {
+  size: 16px;
+  margin-left: 8px;
+} */
+
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Tajawal", sans-serif;
+}
+
+.dropdown-toggle {
+  background: #fff;
+  border-radius: 30px;
+  padding: 4px 14px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu {
+  position: absolute;
+  width: 100%;
+  top: 110%;
+  left: 0;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 10px 16px;
+  z-index: 10;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #454545;
+  font-family: "Tajawal", sans-serif;
+}
+
+.border-style {
+  margin-top: 30px;
+}
+
+.selected-card {
+  border: solid 1px #bfbfbf;
+  border-radius: 30px;
+  padding: 4px 10px;
+  margin-left: 2px;
+  font-size: 20px;
+  color: #636363;
+}
+
+.border-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.border-option {
+  padding: 6px 14px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Tajawal", sans-serif;
+  background-color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+.border-option:hover {
+  background-color: #f3f0f9;
+}
+
+.card-borders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.card-borders img {
+  width: 100px;
+  height: auto;
+}
+
+.arrow {
+  size: 16px;
+  margin-left: 8px;
+}
+
+/* @media (max-width: 768px) {
+  .custom-dropdown {
+    width: 100%;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    max-width: 300px;
+    left: 0;
+    right: 0;
+    top: 105%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 8px;
+  }
+
+  .dropdown-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .selected-border {
+    font-size: 16px;
+  }
+
+  .border-options {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .border-option {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .card-borders {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
+
+   .card-borders img {
+    width: 80%;
+    max-width: 250px;
+  } 
+
+  .card-borders img {
+    width: 100px; 
+    max-width: 100px; 
+  }
+
+  .arrow img {
+    width: 18px;
+    height: 18px;
+  }
+} */
+
+/* Tablet (max 768px) */
+@media (max-width: 768px) {
+  .dropdown-title {
+    font-size: 16px;
+  }
+
+  .selected-card {
+    font-size: 18px;
+  }
+
+  .border-option {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  .card-borders img {
+    width: 90px;
+  }
+
+  .border-style {
+    margin-top: 5px;
+  }
+
+  .change-arrow3 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Mobile L (max 425px) */
+@media (max-width: 425px) {
+  .dropdown-title {
+    font-size: 15px;
+  }
+
+  .selected-card {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .border-option {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .dropdown-menu {
+    padding: 8px 12px;
+  }
+
+  .card-borders {
+    gap: 30px;
+  }
+
+  .card-borders img {
+    width: 80px;
+  }
+
+  .border-style {
+    margin-top: 5px;
+  }
+
+  .change-arrow3 {
+    width: 27px;
+    height: 27px;
+  }
+}
+
+/* Mobile M (max 375px) */
+@media (max-width: 375px) {
+  .dropdown-title {
+    font-size: 14px;
+  }
+
+  .selected-card {
+    font-size: 15px;
+  }
+
+  .border-option {
+    font-size: 11.5px;
+    padding: 5px 8px;
+  }
+
+  .card-borders img {
+    width: 70px;
+  }
+
+  .border-style {
+    margin-top: 5px;
+  }
+  .change-arrow3 {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Mobile S (max 320px) */
+@media (max-width: 320px) {
+  .dropdown-title {
+    font-size: 13px;
+  }
+
+  .selected-card {
+    font-size: 14px;
+    padding: 3px 7px;
+  }
+
+  .border-option {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .dropdown-menu {
+    padding: 6px 10px;
+  }
+
+  .card-borders img {
+    width: 65px;
+  }
+
+  .border-style {
+    margin-top: 5px;
+  }
+  .change-arrow3 {
+    width: 23px;
+    height: 23px;
+  }
+}

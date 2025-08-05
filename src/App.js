@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { lazy, Suspense, useEffect, useState } from "react";
+import Loader from "./components/Loader";
 
-function App() {
+// Code-split pages
+const HomePage = lazy(() => import("./pages/HomePage"));
+const CreateLetterPage = lazy(() => import("./pages/CreateLetterPage"));
+
+function RouteChangeSpinner({ children }) {
+  const location = useLocation();
+  const [navLoading, setNavLoading] = useState(false);
+
+  useEffect(() => {
+    // show spinner on every route change
+    setNavLoading(true);
+    // let the new route render; hide shortly after (tweak as needed)
+    const id = setTimeout(() => setNavLoading(false), 350);
+    return () => clearTimeout(id);
+  }, [location]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {navLoading && <Loader />}
+      {children}
+    </>
   );
 }
 
-export default App;
+function InitialLoadGate({ children }) {
+  const [ready, setReady] = useState(document.readyState === "complete");
+
+  useEffect(() => {
+    if (ready) return;
+    const onLoad = () => setReady(true);
+    window.addEventListener("load", onLoad);
+    return () => window.removeEventListener("load", onLoad);
+  }, [ready]);
+
+  return ready ? children : <Loader />;
+}
+
+export default function App() {
+  return (
+    <Router>
+      <InitialLoadGate>
+        <RouteChangeSpinner>
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/create" element={<CreateLetterPage />} />
+            </Routes>
+          </Suspense>
+        </RouteChangeSpinner>
+      </InitialLoadGate>
+    </Router>
+  );
+}

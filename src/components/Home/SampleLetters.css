@@ -1,0 +1,28 @@
+.cards {
+  flex: 1;
+  max-width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.cards img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .cards {
+    max-width: 90%;
+    padding-top: 20px;
+  }
+
+  .cards img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

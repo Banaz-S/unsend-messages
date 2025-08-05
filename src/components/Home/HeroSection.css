@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Font Face */
+@font-face {
+  font-family: "Garata";
+  src: url("../../assets/fonts/GarataDemo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bahij-Light";
+  src: url("../../assets/fonts/Bahij-SemiLight.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content {
+  flex: 1;
+  max-width: 45%;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.content h3 {
+  font-family: "Garata";
+  font-size: clamp(30px, 6vw, 70px); /* Responsive font */
+  color: #454545;
+}
+
+.content p {
+  margin-top: -30px;
+  font-family: "Bahij-Light", sans-serif;
+  font-size: clamp(16px, 2.5vw, 26px);
+  color: #7c7c7c;
+}
+
+.btn-write-letter {
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  padding: 14px 46px;
+  border: none;
+  border-radius: 32px;
+  background-color: #ffd573;
+  font-size: 18px;
+  color: #454545;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-write-letter:hover {
+  background-color: #ffdf93;
+}
+
+/* responsive for mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .content p {
+    margin-top: 10px;
+  }
+
+  .btn-write-letter {
+    padding: 12px 36px;
+    font-size: 16px;
+  }
+}

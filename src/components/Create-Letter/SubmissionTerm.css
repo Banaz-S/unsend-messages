@@ -1,0 +1,45 @@
+.submit {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between checkbox and text */
+  font-size: 14px;
+  margin-left: 25%;
+  margin-top: 5px;
+}
+
+.submit p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.submit span {
+  color: grey;
+  margin-right: 4px; /* small space before "terms of submission" */
+}
+
+@media (max-width: 768px) {
+  .submit {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 20px 0 20px;
+    font-size: 13px;
+    flex-wrap: nowrap;
+  }
+
+  .submit p {
+    font-size: 13px;
+    margin: 0;
+    white-space: nowrap;
+  }
+
+  .submit span {
+    margin-right: 4px;
+  }
+
+  .submit .checkbox {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Background Shadow Image */
+#shadow-background {
+  position: absolute;
+  top: -25vw;
+  left: -25vw;
+  width: 200vw;
+  height: 200vw;
+  z-index: 1;
+  max-width: none;
+}
+
+/* Lines Image */
+#line-background {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #shadow-background {
+    top: -50vw;
+    left: -50vw;
+    width: 250vw;
+    height: 250vw;
+  }
+
+  #line-background {
+    width: 95%;
+  }
+}
