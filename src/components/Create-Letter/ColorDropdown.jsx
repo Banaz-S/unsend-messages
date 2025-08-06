@@ -18,7 +18,7 @@ function ColorDropdown({ onColorChange, isOpen, onToggle }) {
   const handleColorClick = (colorName) => {
     setSelectedColor(colorName);
     onColorChange(colorName);
-    onToggle(null); // Close the dropdown (parent sets isOpen = false)
+    onToggle(null); // Close the dropdown
   };
 
   const selected = COLORS.find((c) => c.name === selectedColor);

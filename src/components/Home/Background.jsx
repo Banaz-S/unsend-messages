@@ -5,12 +5,7 @@ function Background() {
   return (
     <div>
       <img id="shadow-background" src={shadow} alt="shadow" />
-      <img
-        id="line-background"
-        src={lines}
-        alt="lines"
-        // style="width: 90%; height: 80%"
-      />
+      <img id="line-background" src={lines} alt="lines" />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 .submit {
   display: flex;
   align-items: center;
-  gap: 8px; /* space between checkbox and text */
+  gap: 8px;
   font-size: 14px;
   margin-left: 25%;
   margin-top: 5px;
@@ -15,7 +15,7 @@
 
 .submit span {
   color: grey;
-  margin-right: 4px; /* small space before "terms of submission" */
+  margin-right: 4px;
 }
 
 @media (max-width: 768px) {

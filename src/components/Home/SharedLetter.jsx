@@ -1,6 +1,6 @@
 import "./SharedLetter.css";
 import { useState, useEffect } from "react";
-// at the top of SharedLetter.js
+
 import blue_canva from "../../assets/cards/blue-canva.svg";
 import blue_flower from "../../assets/cards/blue-flower.svg";
 import green_flower from "../../assets/cards/green-flower.svg";
@@ -13,7 +13,7 @@ import grey_canva from "../../assets/cards/grey-canva.svg";
 import grey_flower from "../../assets/cards/grey-flower.svg";
 import purple_canva from "../../assets/cards/purple-canva.svg";
 import purple_flower from "../../assets/cards/purple-flower.svg";
-// add others if you have more
+
 
 const images = {
   "blue-canva": blue_canva,
@@ -37,7 +37,7 @@ const defaultLetters = [
     color: "pink",
     border: "flower",
     mention: "Stranger",
-    isDefault: true, // mark it
+    isDefault: true, 
   },
   {
     id: "default-2",
@@ -95,7 +95,7 @@ function SharedLetter({ filterColor, filterTo }) {
     });
 
     setLetters([...validLetters, ...defaultLetters]);
-    localStorage.setItem("sharedLetters", JSON.stringify(validLetters)); // cleanup
+    localStorage.setItem("sharedLetters", JSON.stringify(validLetters)); 
   }, []);
 
   // Apply filters

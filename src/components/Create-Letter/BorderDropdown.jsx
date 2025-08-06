@@ -18,7 +18,7 @@ function BorderDropdown({
   const card1 = require(`../../assets/cards/${selectedColor}-canva.svg`);
   const card2 = require(`../../assets/cards/${selectedColor}-flower.svg`);
 
-  // Map border keys to readable labels
+
   const borderLabelMap = {
     canva: "Calm Canvas",
     flower: "Flowered Border",

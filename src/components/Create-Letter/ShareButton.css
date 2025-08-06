@@ -9,8 +9,6 @@
   font-size: 18px;
   color: #454545;
   cursor: pointer;
-
-  /* ✅ This is what you want */
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
@@ -63,29 +61,6 @@
   }
 }
 
-/* @media (max-width: 768px) {
-  .write-letter-btn {
-    width: 100%;
-    max-width: 95%;
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-
-  .tooltip-msg {
-    top: 105%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 11px;
-    padding: 5px 8px;
-    white-space: normal;
-    max-width: 90vw;
-  }
-
-  .loading-icon {
-    width: 18px;
-    height: 18px;
-  }
-} */
 @media (max-width: 768px) {
   .write-letter-btn {
     width: 400px;

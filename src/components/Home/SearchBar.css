@@ -1,6 +1,6 @@
 .search-section {
   position: relative;
-  margin-top: 10px; /* push search down from above content */
+  margin-top: 10px;
   padding: 0 5%;
   width: 90%;
   z-index: 3;
@@ -21,7 +21,7 @@
   width: 70%;
   height: 40px;
   position: relative;
-  margin-top: 10px; /* push search down from above content */
+  margin-top: 10px;
   z-index: 3;
   pointer-events: auto;
   margin-left: 10%;
@@ -33,7 +33,7 @@
   outline: none;
   font-size: 18px;
   min-width: 120px;
-  order: 1; /* appear after tags */
+  order: 1;
   background-image: url("../../assets/icons/search-normal.svg");
   background-position: 20px center;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@
   }
 
   .search {
-    width: 100%; /* full width on mobile */
+    width: 100%;
     font-size: 16px;
     height: 50px;
     background-size: 20px 20px;

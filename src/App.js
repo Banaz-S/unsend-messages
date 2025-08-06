@@ -46,7 +46,7 @@ function InitialLoadGate({ children }) {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/unsend-messages">
       <InitialLoadGate>
         <RouteChangeSpinner>
           <Suspense fallback={<Loader />}>

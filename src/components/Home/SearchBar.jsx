@@ -1,4 +1,3 @@
-// src/components/SearchBar.jsx
 import { useEffect, useRef, useState } from "react";
 import "./SearchBar.css";
 
@@ -137,7 +136,7 @@ export default function SearchBar({
         </div>
       </div>
 
-      {/* --- Your exact dropdown markup --- */}
+      {/* --- dropdown markup --- */}
       <div className={`filters ${open ? "" : "hidden"}`}>
         <p>
           <strong>Colors</strong>
