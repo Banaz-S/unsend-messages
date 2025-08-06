@@ -11,7 +11,6 @@ import { useState } from "react";
 function HomePage() {
   const [selectedColor, setSelectedColor] = useState(null);
   const [selectedTo, setSelectedTo] = useState(null);
-  const [filters, setFilters] = useState({ color: [], to: [] });
   return (
     <div>
       <Background />

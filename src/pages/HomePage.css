@@ -7,13 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* allows stacking if needed */
+  flex-wrap: wrap;
   padding: 0 5%;
-  pointer-events: none; /* disable clicks on the container */
+  pointer-events: none;
 }
 
 .container * {
-  pointer-events: auto; /* re-enable clicks on children */
+  pointer-events: auto;
 }
 
 .site-footer {

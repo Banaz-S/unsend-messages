@@ -14,7 +14,6 @@ import grey_flower from "../../assets/cards/grey-flower.svg";
 import purple_canva from "../../assets/cards/purple-canva.svg";
 import purple_flower from "../../assets/cards/purple-flower.svg";
 
-
 const images = {
   "blue-canva": blue_canva,
   "blue-flower": blue_flower,
@@ -37,7 +36,7 @@ const defaultLetters = [
     color: "pink",
     border: "flower",
     mention: "Stranger",
-    isDefault: true, 
+    isDefault: true,
   },
   {
     id: "default-2",
@@ -95,7 +94,7 @@ function SharedLetter({ filterColor, filterTo }) {
     });
 
     setLetters([...validLetters, ...defaultLetters]);
-    localStorage.setItem("sharedLetters", JSON.stringify(validLetters)); 
+    localStorage.setItem("sharedLetters", JSON.stringify(validLetters));
   }, []);
 
   // Apply filters

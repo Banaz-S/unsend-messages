@@ -83,7 +83,7 @@
   color: #988f93;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .shared-card img {
     width: 100%;
     height: 100%;
@@ -94,16 +94,16 @@
   .shared-card-textarea {
     font-size: 18px;
     top: 40px;
-    left: 12px;
+    left: 18px;
     right: 12px;
-    width: 240px;
-    max-height: 160px;
+    width: 260px;
+    max-height: 180px;
     overflow-y: auto;
   }
 
   .shared-card-footer {
     top: 75%;
-    left: 12px;
+    left: 18px;
     font-size: 16px;
   }
 }
@@ -122,15 +122,15 @@
     top: 10px;
     left: 8px;
     right: 12px;
-    width: 120px;
+    width: 110px;
     max-height: 73px;
     overflow-y: auto;
   }
 
   .shared-card-footer {
-    top: 107px;
+    top: 95px;
     left: 2px;
-    font-size: 9px;
+    font-size: 8px;
   }
 
   .shared-card img {
@@ -145,7 +145,7 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 480px; 
+    top: 480px;
     left: 50px;
     font-size: 20px;
   }
@@ -165,12 +165,12 @@
       :has(> .shared-card:nth-child(3))
     )
     .shared-card-textarea {
-    font-size: 16px;
-    top: 40px;
-    left: 20px;
+    font-size: 17px;
+    top: 50px;
+    left: 30px;
     right: 12px;
-    width: 250px;
-    max-height: 150px;
+    width: 280px;
+    max-height: 190px;
     overflow-y: auto;
   }
 
@@ -178,9 +178,9 @@
       :has(> .shared-card:nth-child(3))
     )
     .shared-card-footer {
-    top: 230px; 
-    left: 20px;
-    font-size: 14px;
+    top: 280px;
+    left: 30px;
+    font-size: 15px;
   }
 
   /* Exactly three children */
@@ -192,8 +192,8 @@
     top: 30px;
     left: 14px;
     right: 12px;
-    width: 150px;
-    max-height: 100px;
+    width: 200px;
+    max-height: 130px;
     overflow-y: auto;
   }
 
@@ -201,8 +201,8 @@
       :has(> .shared-card:nth-child(4))
     )
     .shared-card-footer {
-    top: 140px; 
-    left: 10px;
+    top: 170px;
+    left: 14px;
     font-size: 12px;
   }
 }
@@ -225,6 +225,85 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-textarea {
+    font-size: 24px;
+    top: 100px;
+    left: 60px;
+    right: 12px;
+    width: 500px;
+    max-height: 240px;
+    overflow-y: auto;
+  }
+  .card-grid:has(> .shared-card:only-child) .shared-card-footer {
+    top: 530px;
+    left: 50px;
+    font-size: 20px;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 16px;
+    top: 50px;
+    left: 22px;
+    right: 12px;
+    width: 260px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 270px;
+    left: 22px;
+    font-size: 14px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 12px;
+    top: 25px;
+    left: 14px;
+    right: 10px;
+    width: 190px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 65%;
+    left: 12px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 820px) {
+  .shared-card-textarea {
+    font-size: 9px;
+    top: 12px;
+    left: 8px;
+    right: 10px;
+    width: 125px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 65%;
+    left: 8px;
+    font-size: 8px;
+  }
+
+  .card-grid:has(> .shared-card:only-child) .shared-card-textarea {
     font-size: 22px;
     top: 80px;
     left: 50px;
@@ -234,39 +313,67 @@
     overflow-y: auto;
   }
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 480px; 
+    top: 440px;
     left: 50px;
     font-size: 18px;
   }
-}
 
-@media (max-width: 820px) {
-  .shared-card-textarea {
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
     font-size: 14px;
-    top: 30px;
-    left: 10px;
-    right: 10px;
+    top: 40px;
+    left: 18px;
+    right: 12px;
     width: 250px;
-    max-height: 150px;
+    max-height: 160px;
     overflow-y: auto;
   }
 
-  .shared-card-footer {
-    top: 74%;
-    left: 10px;
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 230px;
+    left: 18px;
     font-size: 13px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 11px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    width: 165px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 65%;
+    left: 6px;
+    font-size: 10px;
   }
 }
 
 @media (max-width: 768px) {
   .shared-card-textarea {
-    font-size: 9px;
-    top: 14px;
-    left: 10px;
+    font-size: 8px;
+    top: 12px;
+    left: 6px;
     right: 10px;
-    width: 110px;
-    max-height: 90px;
-    overflow-y: auto; 
+    width: 115px;
+    max-height: 75px;
+    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -285,31 +392,77 @@
     overflow-y: auto;
   }
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 480px; 
+    top: 440px;
     left: 50px;
     font-size: 18px;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 14px;
+    top: 40px;
+    left: 18px;
+    right: 12px;
+    width: 250px;
+    max-height: 160px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 230px;
+    left: 18px;
+    font-size: 13px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    width: 155px;
+    max-height: 90px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 65%;
+    left: 6px;
+    font-size: 9px;
   }
 }
 
 @media (max-width: 650px) {
   .shared-card-textarea {
-    font-size: 8px;
+    font-size: 9px;
     top: 14px;
-    left: 13px;
+    left: 11px;
     right: 10px;
-    width: 110px;
+    width: 125px;
     max-height: 90px;
-    overflow-y: auto; 
+    overflow-y: auto;
   }
 
   .shared-card-footer {
     top: 65%;
     left: 6px;
-    font-size: 8px;
+    font-size: 9px;
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 370px;
+    top: 390px;
     left: 40px;
     font-size: 18px;
   }
@@ -322,6 +475,52 @@
     width: 380px;
     max-height: 240px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 12px;
+    top: 30px;
+    left: 12px;
+    right: 12px;
+    width: 180px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 175px;
+    left: 12px;
+    font-size: 11px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 14px;
+    left: 10px;
+    right: 10px;
+    width: 125px;
+    max-height: 90px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 65%;
+    left: 6px;
+    font-size: 9px;
   }
 }
 
@@ -357,6 +556,52 @@
     max-height: 170px;
     overflow-y: auto;
   }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 12px;
+    top: 30px;
+    left: 12px;
+    right: 12px;
+    width: 175px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 155px;
+    left: 12px;
+    font-size: 11px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 8px;
+    top: 14px;
+    left: 10px;
+    right: 10px;
+    width: 110px;
+    max-height: 90px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 65%;
+    left: 6px;
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 542px) {
@@ -377,7 +622,7 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 330px; 
+    top: 330px;
     left: 30px;
     font-size: 16px;
   }
@@ -390,6 +635,52 @@
     width: 360px;
     max-height: 200px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 12px;
+    top: 30px;
+    left: 12px;
+    right: 12px;
+    width: 175px;
+    max-height: 110px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 155px;
+    left: 12px;
+    font-size: 11px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 8px;
+    top: 10px;
+    left: 8px;
+    right: 12px;
+    width: 110px;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 100px;
+    left: 8px;
+    font-size: 8px;
   }
 }
 
@@ -411,7 +702,7 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 290px; 
+    top: 280px;
     left: 30px;
     font-size: 16px;
   }
@@ -421,9 +712,55 @@
     top: 50px;
     left: 30px;
     right: 12px;
-    width: 320px;
+    width: 300px;
     max-height: 180px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 11px;
+    top: 20px;
+    left: 12px;
+    right: 12px;
+    width: 155px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 135px;
+    left: 12px;
+    font-size: 10px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 11px;
+    top: 14px;
+    left: 14px;
+    right: 12px;
+    width: 155px;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 135px;
+    left: 10px;
+    font-size: 10px;
   }
 }
 
@@ -435,7 +772,7 @@
     right: 10px;
     width: 125px;
     max-height: 100px;
-    overflow-y: auto; 
+    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -445,7 +782,7 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 260px; 
+    top: 260px;
     left: 30px;
     font-size: 16px;
   }
@@ -458,6 +795,52 @@
     width: 260px;
     max-height: 180px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 20px;
+    left: 10px;
+    right: 12px;
+    width: 135px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 110px;
+    left: 10px;
+    font-size: 9px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 12px;
+    left: 10px;
+    right: 12px;
+    width: 135px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 120px;
+    left: 10px;
+    font-size: 9px;
   }
 }
 
@@ -482,19 +865,65 @@
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-footer {
-    top: 220px;
+    top: 215px;
     left: 18px;
     font-size: 14px;
   }
 
   .card-grid:has(> .shared-card:only-child) .shared-card-textarea {
     font-size: 16px;
-    top: 50px;
+    top: 40px;
     left: 20px;
     right: 12px;
     width: 220px;
     max-height: 200px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 20px;
+    left: 5px;
+    right: 12px;
+    width: 120px;
+    max-height: 75px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 105px;
+    left: 7px;
+    font-size: 9px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 9px;
+    top: 15px;
+    left: 6px;
+    right: 12px;
+    width: 125px;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 105px;
+    left: 6px;
+    font-size: 9px;
   }
 }
 
@@ -506,7 +935,7 @@
     right: 10px;
     width: 200px;
     max-height: 130px;
-    overflow-y: auto; 
+    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -533,5 +962,51 @@
     width: 200px;
     max-height: 200px;
     overflow-y: auto;
+  }
+
+  /* Exactly two children */
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-textarea {
+    font-size: 14px;
+    top: 40px;
+    left: 20px;
+    right: 12px;
+    width: 210px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(2)):not(
+      :has(> .shared-card:nth-child(3))
+    )
+    .shared-card-footer {
+    top: 200px;
+    left: 10px;
+    font-size: 12px;
+  }
+
+  /* Exactly three children */
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-textarea {
+    font-size: 14px;
+    top: 40px;
+    left: 20px;
+    right: 12px;
+    width: 210px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+
+  .card-grid:has(> .shared-card:nth-child(3)):not(
+      :has(> .shared-card:nth-child(4))
+    )
+    .shared-card-footer {
+    top: 195px;
+    left: 14px;
+    font-size: 12px;
   }
 }
