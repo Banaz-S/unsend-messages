@@ -16,6 +16,12 @@
   height: 400px;
   border-radius: 20px;
   overflow: hidden;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.image-card:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 3px 3px 6px rgba(57, 57, 57, 0.25);
 }
 
 .image-card img {
@@ -40,6 +46,7 @@
   font-weight: 600;
   font-family: "Bahij-Light", sans-serif;
   line-height: 1.5em;
+  max-height: 180px;
   overflow-y: auto;
   color: #454545;
   background: transparent;

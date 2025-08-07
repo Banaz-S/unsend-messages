@@ -24,6 +24,12 @@
   border-radius: 20px;
   overflow: hidden;
   z-index: 10;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
+}
+
+.shared-card:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 3px 4px 8px rgba(57, 57, 57, 0.25);
 }
 
 .shared-card img {
