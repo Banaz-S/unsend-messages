@@ -12,11 +12,6 @@
   max-width: 500px;
   height: auto;
   object-fit: contain;
-  transition: transform 1.5s ease;
-}
-
-.cards img:hover {
-  transform: scale(1.07) translateY(-4px) rotate(13deg);
 }
 
 /* responsive for mobile */

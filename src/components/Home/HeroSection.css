@@ -45,7 +45,7 @@ body {
   padding: 14px 46px;
   border: none;
   border-radius: 32px;
-  background-color: #ffd573;
+  background-color: #ffdf93;
   font-size: 18px;
   color: #454545;
   cursor: pointer;
@@ -53,7 +53,7 @@ body {
 }
 
 .btn-write-letter:hover {
-  background-color: #ffdf93;
+  background-color: #ffd573;
 }
 
 /* responsive for mobile */

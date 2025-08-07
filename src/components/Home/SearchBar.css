@@ -59,6 +59,8 @@
   align-items: center;
   background-color: white;
   border: 1px solid #ccc;
+  color: #888;
+  font-family: "Tajawal", sans-serif;
   border-radius: 20px;
   padding: 6px 10px;
   margin-right: 6px;
@@ -67,8 +69,8 @@
 }
 
 .color-dot {
-  width: 14px;
-  height: 14px;
+  width: 11px;
+  height: 11px;
   background-color: var(--dot-color);
   border-radius: 50%;
   margin-right: 6px;
@@ -82,7 +84,7 @@
   cursor: pointer;
   font-size: 18px;
   line-height: 1;
-  color: #555;
+  color: #888;
   padding: 0;
 }
 
