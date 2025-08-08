@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/unsend-messages/static/css/main.8891b46c.css",
-    "main.js": "/unsend-messages/static/js/main.90ffd6c4.js",
-    "static/css/645.5f229899.chunk.css": "/unsend-messages/static/css/645.5f229899.chunk.css",
+    "main.js": "/unsend-messages/static/js/main.c168a453.js",
+    "static/css/645.859403f1.chunk.css": "/unsend-messages/static/css/645.859403f1.chunk.css",
     "static/js/645.a4600535.chunk.js": "/unsend-messages/static/js/645.a4600535.chunk.js",
     "static/css/921.05234fd0.chunk.css": "/unsend-messages/static/css/921.05234fd0.chunk.css",
     "static/js/921.bcbb771e.chunk.js": "/unsend-messages/static/js/921.bcbb771e.chunk.js",
@@ -32,8 +32,8 @@
     "static/media/arrow-up.svg": "/unsend-messages/static/media/arrow-up.34997f2c55164d525a4368366d4f6e3b.svg",
     "static/media/arrow-down.svg": "/unsend-messages/static/media/arrow-down.3dcdd98fcef0b80f7a91bf5530597208.svg",
     "main.8891b46c.css.map": "/unsend-messages/static/css/main.8891b46c.css.map",
-    "main.90ffd6c4.js.map": "/unsend-messages/static/js/main.90ffd6c4.js.map",
-    "645.5f229899.chunk.css.map": "/unsend-messages/static/css/645.5f229899.chunk.css.map",
+    "main.c168a453.js.map": "/unsend-messages/static/js/main.c168a453.js.map",
+    "645.859403f1.chunk.css.map": "/unsend-messages/static/css/645.859403f1.chunk.css.map",
     "645.a4600535.chunk.js.map": "/unsend-messages/static/js/645.a4600535.chunk.js.map",
     "921.05234fd0.chunk.css.map": "/unsend-messages/static/css/921.05234fd0.chunk.css.map",
     "921.bcbb771e.chunk.js.map": "/unsend-messages/static/js/921.bcbb771e.chunk.js.map",
@@ -41,6 +41,6 @@
   },
   "entrypoints": [
     "static/css/main.8891b46c.css",
-    "static/js/main.90ffd6c4.js"
+    "static/js/main.c168a453.js"
   ]
 }
