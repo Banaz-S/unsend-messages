@@ -97,7 +97,7 @@ function SharedLetter({ filterColor, filterTo }) {
     localStorage.setItem("sharedLetters", JSON.stringify(validLetters));
   }, []);
 
-  // Apply filters
+  // ===Apply filters===
   const filteredLetters = letters.filter((letter) => {
     const colorMatch =
       !filterColor || letter.color.toLowerCase() === filterColor.toLowerCase();

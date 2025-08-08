@@ -4,7 +4,7 @@ import cards from "../../assets/cards.svg";
 function SampleLetters() {
   return (
     <div className="cards">
-      <img src={cards} alt="Cards Example" />
+      <img src={cards} alt="Card Example" />
     </div>
   );
 }

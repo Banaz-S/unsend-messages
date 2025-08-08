@@ -95,7 +95,7 @@
   margin-left: 8px;
 }
 
-/* Tablet (max 768px) */
+/* ===Tablet (max 768px)=== */
 @media (max-width: 768px) {
   .dropdown-title {
     font-size: 16px;
@@ -124,7 +124,7 @@
   }
 }
 
-/* Mobile L (max 425px) */
+/* ===Mobile L (max 425px)=== */
 @media (max-width: 425px) {
   .dropdown-title {
     font-size: 15px;
@@ -162,7 +162,7 @@
   }
 }
 
-/* Mobile M (max 375px) */
+/* ===Mobile M (max 375px)=== */
 @media (max-width: 375px) {
   .dropdown-title {
     font-size: 14px;
@@ -190,7 +190,7 @@
   }
 }
 
-/* Mobile S (max 320px) */
+/* ===Mobile S (max 320px)=== */
 @media (max-width: 320px) {
   .dropdown-title {
     font-size: 13px;

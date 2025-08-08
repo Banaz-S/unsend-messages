@@ -7,7 +7,7 @@ import {
 import { lazy, Suspense, useEffect, useState } from "react";
 import Loader from "./components/Loader";
 
-// Code-split pages
+// ===Code-split pages===
 const HomePage = lazy(() => import("./pages/HomePage"));
 const CreateLetterPage = lazy(() => import("./pages/CreateLetterPage"));
 

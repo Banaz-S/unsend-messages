@@ -1,6 +1,7 @@
 import "./HeroSection.css";
 import { useNavigate } from "react-router-dom";
 
+/* First Page */
 function HeroSection() {
   const navigate = useNavigate();
 

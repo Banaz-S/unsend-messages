@@ -31,7 +31,7 @@ export default function SearchBar({
   const [placeholder, setPlaceholder] = useState("Search letters...");
   const wrapRef = useRef(null);
 
-  // Open filters and clear input on focus/click
+  // Open filters and clear input on focus & click
   const openFilters = () => {
     setOpen(true);
     setInputValue("");

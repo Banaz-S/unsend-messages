@@ -4,7 +4,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Background Shadow Image */
+/* Backgrounds */
+/* Shadow Image */
 #shadow-background {
   position: absolute;
   top: -25vw;

@@ -42,9 +42,9 @@
   border-radius: 10px;
   padding: 10px;
   resize: none;
+  font-family: "Bahij-Light", sans-serif;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Bahij-Light", sans-serif;
   line-height: 1.5em;
   max-height: 180px;
   overflow-y: auto;

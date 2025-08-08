@@ -28,14 +28,14 @@
     flex-wrap: nowrap;
   }
 
+  .submit span {
+    margin-right: 4px;
+  }
+
   .submit p {
     font-size: 13px;
     margin: 0;
     white-space: nowrap;
-  }
-
-  .submit span {
-    margin-right: 4px;
   }
 
   .submit .checkbox {

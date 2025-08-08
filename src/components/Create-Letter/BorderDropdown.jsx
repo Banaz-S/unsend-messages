@@ -11,13 +11,12 @@ function BorderDropdown({
 }) {
   const handleBorderClick = (borderType) => {
     onBorderChange(borderType);
-    onToggle(null); // close dropdown
+    onToggle(null);
   };
 
   // Dynamic paths for previews
   const card1 = require(`../../assets/cards/${selectedColor}-canva.svg`);
   const card2 = require(`../../assets/cards/${selectedColor}-flower.svg`);
-
 
   const borderLabelMap = {
     canva: "Calm Canvas",

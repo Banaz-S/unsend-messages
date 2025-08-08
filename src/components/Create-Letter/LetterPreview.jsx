@@ -5,16 +5,16 @@ import pinkCanva from "../../assets/cards/pink-canva.svg";
 import blueCanva from "../../assets/cards/blue-canva.svg";
 import peachCanva from "../../assets/cards/peach-canva.svg";
 import greyCanva from "../../assets/cards/grey-canva.svg";
-import purpleCanva from "../../assets/cards/purple-canva.svg";
 import greenCanva from "../../assets/cards/green-canva.svg";
+import purpleCanva from "../../assets/cards/purple-canva.svg";
 
 // Flower imports
 import pinkFlower from "../../assets/cards/pink-flower.svg";
 import blueFlower from "../../assets/cards/blue-flower.svg";
 import peachFlower from "../../assets/cards/peach-flower.svg";
 import greyFlower from "../../assets/cards/grey-flower.svg";
-import purpleFlower from "../../assets/cards/purple-flower.svg";
 import greenFlower from "../../assets/cards/green-flower.svg";
+import purpleFlower from "../../assets/cards/purple-flower.svg";
 
 // Mapping object
 const imageMap = {

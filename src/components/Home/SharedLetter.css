@@ -82,11 +82,11 @@
 .shared-card-footer.to.peachs {
   color: #c57979;
 }
-.shared-card-footer.to.greens {
-  color: #58d5b2;
-}
 .shared-card-footer.to.greys {
   color: #988f93;
+}
+.shared-card-footer.to.greens {
+  color: #58d5b2;
 }
 
 @media (max-width: 1200px) {

@@ -1,12 +1,11 @@
 import "./HomePage.css";
+import { useState } from "react";
 import Background from "../components/Home/Background";
 import HeroSection from "../components/Home/HeroSection";
 import SampleLetters from "../components/Home/SampleLetters";
 import SearchBar from "../components/Home/SearchBar";
 import GoUpButton from "../components/Home/GoUpButton";
 import SharedLetter from "../components/Home/SharedLetter";
-
-import { useState } from "react";
 
 function HomePage() {
   const [selectedColor, setSelectedColor] = useState(null);

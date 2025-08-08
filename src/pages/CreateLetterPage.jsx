@@ -16,7 +16,7 @@ function CreateLetterPage() {
   const [letterText, setLetterText] = useState("");
   const [isChecked, setIsChecked] = useState(false);
 
-  // Close dropdowns
+  // ===== Close dropdowns =====
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!e.target.closest(".custom-dropdown")) {

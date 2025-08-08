@@ -1,9 +1,10 @@
 import "./Loader.css";
 
-export default function Loader() {
+function Loader() {
   return (
     <div className="loader-overlay">
       <div className="spinner" />
     </div>
   );
 }
+export default Loader;

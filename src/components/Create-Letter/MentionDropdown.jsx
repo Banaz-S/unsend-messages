@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./MentionDropdown.css";
-import arrowDown from "../../assets/icons/arrow-down.svg";
 import arrowUp from "../../assets/icons/arrow-up.svg";
+import arrowDown from "../../assets/icons/arrow-down.svg";
 
 function MentionDropdown({ onMentionChange, isOpen, onToggle }) {
   const [selectedMention, setSelectedMention] = useState("No Mention");

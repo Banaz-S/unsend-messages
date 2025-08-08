@@ -1,5 +1,6 @@
 import "./SubmissionTerm.css";
 
+/* User Submission */
 function SubmissionTerm({ checked, onChange }) {
   return (
     <div className="submit">

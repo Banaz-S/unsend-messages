@@ -1,6 +1,6 @@
 import "./Background.css";
-import shadow from "../../assets/bg/shadow.svg";
 import lines from "../../assets/bg/lines.svg";
+import shadow from "../../assets/bg/shadow.svg";
 function Background() {
   return (
     <div>
