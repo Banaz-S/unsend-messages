@@ -24,12 +24,11 @@
   border-radius: 20px;
   overflow: hidden;
   z-index: 10;
-  transition: transform 0.8s ease, box-shadow 0.3s ease;
+  transition: transform 0.8s ease;
 }
 
 .shared-card:hover {
   transform: scale(1.02) translateY(-4px);
-  box-shadow: 3px 4px 8px rgba(57, 57, 57, 0.25);
 }
 
 .shared-card img {
@@ -447,6 +446,24 @@
     top: 65%;
     left: 6px;
     font-size: 9px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shared-card-textarea {
+    font-size: 7px;
+    top: 12px;
+    left: 6px;
+    right: 10px;
+    width: 100px;
+    max-height: 75px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 65%;
+    left: 2px;
+    font-size: 7px;
   }
 }
 
