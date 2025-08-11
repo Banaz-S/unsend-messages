@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  z-index: 5;
 }
 
 .cards img {
@@ -19,6 +20,7 @@
   .cards {
     max-width: 90%;
     padding-top: 20px;
+    margin: 0 auto;
   }
 
   .cards img {

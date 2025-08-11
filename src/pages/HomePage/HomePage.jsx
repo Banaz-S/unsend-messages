@@ -1,11 +1,11 @@
 import "./HomePage.css";
 import { useState } from "react";
-import Background from "../components/Home/Background";
-import HeroSection from "../components/Home/HeroSection";
-import SampleLetters from "../components/Home/SampleLetters";
-import SearchBar from "../components/Home/SearchBar";
-import GoUpButton from "../components/Home/GoUpButton";
-import SharedLetter from "../components/Home/SharedLetter";
+import Background from "./Components/Background";
+import HeroSection from "./Components/HeroSection";
+import SampleLetters from "./Components/SampleLetters";
+import SearchBar from "./Components/SearchBar";
+import SharedLetter from "./Components/SharedLetter";
+import GoUpButton from "./Components/GoUpButton.jsx";
 
 function HomePage() {
   const [selectedColor, setSelectedColor] = useState(null);
@@ -23,8 +23,11 @@ function HomePage() {
         selectedColor={selectedColor}
         selectedTo={selectedTo}
       />
+
       <SharedLetter filterColor={selectedColor} filterTo={selectedTo} />
+
       <GoUpButton />
+
       <footer className="site-footer">
         <p>
           © 2025 | Developed by{" "}

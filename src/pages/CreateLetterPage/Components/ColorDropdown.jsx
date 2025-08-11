@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ColorDropdown.css";
-import arrowUp from "../../assets/icons/arrow-up.svg";
-import arrowDown from "../../assets/icons/arrow-down.svg";
+import arrowUp from "../../../assets/icons/arrow-up.svg";
+import arrowDown from "../../../assets/icons/arrow-down.svg";
 
 const COLORS = [
   { name: "pink", label: "Pink" },

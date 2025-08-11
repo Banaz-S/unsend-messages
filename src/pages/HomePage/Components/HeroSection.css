@@ -7,14 +7,14 @@ body {
 /* Font Face */
 @font-face {
   font-family: "Garata";
-  src: url("../../assets/fonts/GarataDemo.otf") format("opentype");
+  src: url("../../../assets/fonts/GarataDemo.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Bahij-Light";
-  src: url("../../assets/fonts/Bahij-SemiLight.ttf") format("opentype");
+  src: url("../../../assets/fonts/Bahij-SemiLight.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,7 @@ body {
   max-width: 45%;
   margin-left: 2%;
   margin-top: 2%;
+  z-index: 5;
 }
 
 .content p {
@@ -35,7 +36,7 @@ body {
 
 .content h3 {
   font-family: "Garata";
-  font-size: clamp(30px, 6vw, 70px); /* Responsive font */
+  font-size: clamp(30px, 6vw, 70px);
   color: #454545;
 }
 
@@ -67,7 +68,7 @@ body {
 
   .content {
     max-width: 100%;
-    margin: 20px 0;
+    margin: 20px auto;
   }
 
   .content p {

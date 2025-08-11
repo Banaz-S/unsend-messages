@@ -1,7 +1,7 @@
 import "./ShareButton.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import loadingIcon from "../../assets/icons/loading-blue.svg";
+import loadingIcon from "../../../assets/icons/loading-blue.svg";
 
 function ShareButton({
   letterText,

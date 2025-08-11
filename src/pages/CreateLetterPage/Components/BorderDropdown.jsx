@@ -1,6 +1,6 @@
 import "./BorderDropdown.css";
-import arrowDown from "../../assets/icons/arrow-down.svg";
-import arrowUp from "../../assets/icons/arrow-up.svg";
+import arrowDown from "../../../assets/icons/arrow-down.svg";
+import arrowUp from "../../../assets/icons/arrow-up.svg";
 
 function BorderDropdown({
   onBorderChange,
@@ -15,8 +15,8 @@ function BorderDropdown({
   };
 
   // Dynamic paths for previews
-  const card1 = require(`../../assets/cards/${selectedColor}-canva.svg`);
-  const card2 = require(`../../assets/cards/${selectedColor}-flower.svg`);
+  const card1 = require(`../../../assets/cards/${selectedColor}-canva.svg`);
+  const card2 = require(`../../../assets/cards/${selectedColor}-flower.svg`);
 
   const borderLabelMap = {
     canva: "Calm Canvas",

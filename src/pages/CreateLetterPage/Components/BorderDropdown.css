@@ -9,8 +9,8 @@
   background: #fff;
   border-radius: 30px;
   padding: 4px 14px;
-  height: 40px;
   width: 100%;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,11 +42,11 @@
   font-family: "Tajawal", sans-serif;
 }
 
-.mention-list {
+.border-style {
   margin-top: 30px;
 }
 
-.for-who {
+.selected-card {
   border: solid 1px #bfbfbf;
   border-radius: 30px;
   padding: 4px 10px;
@@ -55,13 +55,14 @@
   color: #636363;
 }
 
-.who-options {
+.border-options {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
+  justify-content: center;
 }
 
-.who-option {
+.border-option {
   padding: 6px 14px;
   border: 1px solid #ddd;
   border-radius: 24px;
@@ -72,47 +73,86 @@
   transition: background-color 0.2s ease;
 }
 
-.who-option:hover {
+.border-option:hover {
   background-color: #f3f0f9;
 }
 
-/* Tablet (max 768px) */
-@media (max-width: 768px) {
-  .dropdown-title {
-    font-size: 16px;
-  }
+.card-borders {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
 
-  .for-who {
-    font-size: 18px;
-  }
+.card-borders img {
+  width: 100px;
+  height: auto;
+}
 
-  .who-option {
-    font-size: 13px;
-    padding: 6px 12px;
-  }
+.arrow {
+  size: 16px;
+  margin-left: 8px;
+}
 
-  .mention-list {
-    margin-top: 5px;
-  }
-
-  .change-arrow2 {
-    width: 30px;
-    height: 30px;
+@media (max-width: 1024px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 350px;
   }
 }
 
-/* Mobile L (max 425px) */
+/* ===Tablet (max 768px)=== */
+@media (max-width: 768px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 330px;
+  }
+
+  .dropdown-title {
+    font-size: 14px;
+  }
+
+  .selected-card {
+    font-size: 16px;
+  }
+
+  .border-option {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .card-borders img {
+    width: 80px;
+  }
+
+  .border-style {
+    margin-top: 5px;
+  }
+
+  .change-arrow3 {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ===Mobile L (max 425px)=== */
 @media (max-width: 425px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 300px;
+  }
+
   .dropdown-title {
     font-size: 15px;
   }
 
-  .for-who {
+  .selected-card {
     font-size: 16px;
     padding: 4px 8px;
   }
 
-  .who-option {
+  .border-option {
     font-size: 12px;
     padding: 5px 10px;
   }
@@ -121,53 +161,74 @@
     padding: 8px 12px;
   }
 
-  .mention-list {
+  .card-borders {
+    gap: 30px;
+  }
+
+  .card-borders img {
+    width: 80px;
+  }
+
+  .border-style {
     margin-top: 5px;
   }
 
-  .change-arrow2 {
+  .change-arrow3 {
     width: 27px;
     height: 27px;
   }
 }
 
-/* Mobile M (max 375px) */
+/* ===Mobile M (max 375px)=== */
 @media (max-width: 375px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 260px;
+  }
+
   .dropdown-title {
     font-size: 14px;
   }
 
-  .for-who {
+  .selected-card {
     font-size: 15px;
   }
 
-  .who-option {
+  .border-option {
     font-size: 11.5px;
     padding: 5px 8px;
   }
 
-  .mention-list {
-    margin-top: 5px;
+  .card-borders img {
+    width: 70px;
   }
 
-  .change-arrow2 {
+  .border-style {
+    margin-top: 5px;
+  }
+  .change-arrow3 {
     width: 25px;
     height: 25px;
   }
 }
 
-/* Mobile S (max 320px) */
+/* ===Mobile S (max 320px)=== */
 @media (max-width: 320px) {
+  .dropdown-toggle,
+  .dropdown-menu {
+    width: 220px;
+  }
+
   .dropdown-title {
     font-size: 13px;
   }
 
-  .for-who {
+  .selected-card {
     font-size: 14px;
     padding: 3px 7px;
   }
 
-  .who-option {
+  .border-option {
     font-size: 11px;
     padding: 4px 6px;
   }
@@ -176,11 +237,14 @@
     padding: 6px 10px;
   }
 
-  .mention-list {
-    margin-top: 5px;
+  .card-borders img {
+    width: 65px;
   }
 
-  .change-arrow2 {
+  .border-style {
+    margin-top: 5px;
+  }
+  .change-arrow3 {
     width: 23px;
     height: 23px;
   }

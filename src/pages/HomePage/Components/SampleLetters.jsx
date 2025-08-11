@@ -1,5 +1,5 @@
 import "./SampleLetters.css";
-import cards from "../../assets/cards.svg";
+import cards from "../../../assets/cards.svg";
 
 function SampleLetters() {
   return (

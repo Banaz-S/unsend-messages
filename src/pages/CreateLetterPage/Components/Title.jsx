@@ -1,5 +1,5 @@
 import "./Title.css";
-import goBack from "../../assets/icons/go-back.svg";
+import goBack from "../../../assets/icons/go-back.svg";
 import { useNavigate } from "react-router-dom";
 function Title() {
   const navigate = useNavigate();

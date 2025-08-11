@@ -1,7 +1,7 @@
 /* Font Face */
 @font-face {
   font-family: "Garata";
-  src: url("../../assets/fonts/GarataDemo.otf") format("opentype");
+  src: url("../../../assets/fonts/GarataDemo.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }

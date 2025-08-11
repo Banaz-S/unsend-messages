@@ -61,9 +61,15 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .write-letter-btn {
+    width: 370px;
+  }
+}
+
 @media (max-width: 768px) {
   .write-letter-btn {
-    width: 400px;
+    width: 350px;
     font-size: 16px;
     padding: 12px 40px;
   }
@@ -79,16 +85,16 @@
 
 @media (max-width: 375px) {
   .write-letter-btn {
-    width: 280px;
+    width: 282px;
     font-size: 14px;
-    padding: 10px 28px;
+    padding: 10px 32px;
   }
 }
 
 @media (max-width: 320px) {
   .write-letter-btn {
-    width: 240px;
+    width: 242px;
     font-size: 13px;
-    padding: 8px 24px;
+    padding: 10px 32px;
   }
 }

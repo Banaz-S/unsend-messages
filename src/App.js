@@ -5,11 +5,13 @@ import {
   useLocation,
 } from "react-router-dom";
 import { lazy, Suspense, useEffect, useState } from "react";
-import Loader from "./components/Loader";
+import Loader from "./components/Loader/Loader";
 
 // ===Code-split pages===
-const HomePage = lazy(() => import("./pages/HomePage"));
-const CreateLetterPage = lazy(() => import("./pages/CreateLetterPage"));
+const HomePage = lazy(() => import("./pages/HomePage/HomePage"));
+const CreateLetterPage = lazy(() =>
+  import("./pages/CreateLetterPage/CreateLetterPage")
+);
 
 function RouteChangeSpinner({ children }) {
   const location = useLocation();

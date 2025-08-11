@@ -1,0 +1,494 @@
+@font-face {
+  font-family: "Bahij-Light";
+  src: url("../../../assets/fonts/Bahij-SemiLight.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 5%;
+  width: 100%;
+  max-width: 1300px;
+  box-sizing: border-box;
+  margin: 20px auto;
+}
+
+.shared-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 10;
+  transition: transform 0.8s ease;
+}
+
+.shared-card:hover {
+  transform: scale(1.02) translateY(-4px);
+}
+
+.shared-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.shared-card-textarea {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  right: 20px;
+  height: calc(1.5em * 6);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Bahij-Light", cursive;
+  line-height: 1.5em;
+  max-height: 190px;
+  overflow-y: auto;
+  color: #454545;
+  background: transparent;
+}
+
+.shared-card-footer {
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-family: "Bahij-Light", sans-serif;
+  color: #636363;
+}
+
+.shared-card-footer.to.pinks {
+  color: #d05d94;
+}
+.shared-card-footer.to.purples {
+  color: #855fac;
+}
+.shared-card-footer.to.blues {
+  color: #5d7db8;
+}
+.shared-card-footer.to.peachs {
+  color: #c57979;
+}
+.shared-card-footer.to.greys {
+  color: #988f93;
+}
+.shared-card-footer.to.greens {
+  color: #58d5b2;
+}
+
+@media (max-width: 1200px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shared-card-textarea {
+    font-size: 17px;
+    top: 40px;
+    left: 18px;
+    right: 12px;
+    width: 250px;
+    max-height: 180px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shared-card-textarea {
+    font-size: 14px;
+    top: 35px;
+    left: 15px;
+    right: 12px;
+    width: 225px;
+    max-height: 130px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 200px;
+    left: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shared-card-textarea {
+    font-size: 14px;
+    top: 26px;
+    left: 14px;
+    right: 12px;
+    width: 205px;
+    max-height: 140px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 180px;
+    left: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 830px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shared-card-textarea {
+    font-size: 13px;
+    top: 24px;
+    left: 14px;
+    right: 12px;
+    width: 180px;
+    max-height: 130px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 165px;
+    left: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shared-card-textarea {
+    font-size: 12px;
+    top: 26px;
+    left: 8px;
+    right: 10px;
+    width: 175px;
+    max-height: 140px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 77%;
+    left: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .shared-card-textarea {
+    font-size: 10px;
+    top: 24px;
+    left: 10px;
+    right: 10px;
+    width: 150px;
+    max-height: 120px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 5px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 630px) {
+  .shared-card-textarea {
+    font-size: 9px;
+    top: 14px;
+    left: 11px;
+    right: 10px;
+    width: 145px;
+    max-height: 90px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 70%;
+    left: 6px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 610px) {
+  .shared-card-textarea {
+    font-size: 9px;
+    top: 14px;
+    left: 10px;
+    right: 10px;
+    width: 135px;
+    max-height: 80px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 70%;
+    left: 6px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 570px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 12px;
+    top: 26px;
+    left: 12px;
+    right: 10px;
+    width: 200px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 12px;
+    top: 26px;
+    left: 12px;
+    right: 10px;
+    width: 170px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 12px;
+    top: 22px;
+    left: 12px;
+    right: 10px;
+    width: 170px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 12px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 460px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 11px;
+    top: 22px;
+    left: 10px;
+    right: 10px;
+    width: 160px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 75%;
+    left: 10px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 440px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 10px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    width: 150px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 73%;
+    left: 10px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 410px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 9px;
+    top: 16px;
+    left: 10px;
+    right: 10px;
+    width: 140px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 73%;
+    left: 8px;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 380px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 9px;
+    top: 14px;
+    left: 8px;
+    right: 10px;
+    width: 125px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 73%;
+    left: 6px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 350px) {
+  .shared-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .shared-card-textarea {
+    font-size: 8px;
+    top: 14px;
+    left: 8px;
+    right: 10px;
+    padding-inline-end: -19px;
+    width: 110px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+
+  .shared-card-footer {
+    top: 73%;
+    left: 6px;
+    font-size: 7px;
+  }
+}

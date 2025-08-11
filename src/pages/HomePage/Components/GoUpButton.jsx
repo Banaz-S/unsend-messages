@@ -1,6 +1,6 @@
 import "./GoUpButton.css";
 import { useEffect, useRef, useState, useCallback } from "react";
-import GoUp from "../../assets/icons/go-up.svg";
+import GoUp from "../../../assets/icons/go-up.svg";
 
 export default function GoUpButton() {
   const [visible, setVisible] = useState(false);
