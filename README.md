@@ -13,13 +13,13 @@ Unsend Messages is a simple, responsive web app where users can anonymously shar
 - Fully responsive for mobile, tablet, and desktop
 - Built with React and CSS
 
-### Tech Stack
+## Tech Stack
 
 - Frontend: React, CSS
 - Storage: LocalStorage (no backend)
 - Build Tool: Create React App
 
-#### Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/Banaz-S/unsend-messages.git
