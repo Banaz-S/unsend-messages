@@ -116,6 +116,10 @@
     width: 330px;
   }
 
+  .dropdown-toggle {
+    height: 40px;
+  }
+
   .dropdown-title {
     font-size: 15px;
   }
@@ -140,6 +144,10 @@
   .dropdown-toggle,
   .dropdown-menu {
     width: 300px;
+  }
+
+  .dropdown-toggle {
+    height: 35px;
   }
 
   .dropdown-title {

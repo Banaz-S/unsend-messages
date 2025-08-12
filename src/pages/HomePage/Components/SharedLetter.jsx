@@ -108,17 +108,17 @@ function SharedLetter({ filterColor, filterTo }) {
     if (!letter.isDefault) return "";
     switch (letter.mention) {
       case "Stranger":
-        return "I don't know your story, but I hope today is kind to you, You matter more than you think — even when no one says it, Wishing you unexpected joy and quiet peace. 💕 ";
+        return "I don't know your story, but I hope today is kind to you, You matter more than you think — even when no one says it, Wishing you unexpected joy and quiet peace 💕 ";
       case "A Friend":
-        return "Thank you for being a light in both the calm and the storms, Your presence brings comfort and laughter that I truly cherish, I'm so lucky to have you in my life. 🤍";
+        return "Thank you for being a light in both the calm and the storms, Your presence brings comfort and laughter that I truly cherish, I'm so lucky to have you in my life 🤍";
       case "Mom":
         return "دایکە، خۆشەویستی تۆ باشترینی منی درووست کردووە. تەنانەت گەر زۆریش وانەڵێم، بەس بزانە کە هەمیشە سوپاست دەکەم. خۆشم دەوێیت زیاتر لەوەی کە بتوانم بە وشە نیشانی بدەم ✨";
       case "My Manager":
-        return "Hello, Thank you for believing in me and guiding me through challenges - Your support has helped me grow more than you know, I'm grateful for your leadership and patience.🙏  ";
+        return "Hello, Thank you for believing in me and guiding me through challenges - Your support has helped me grow more than you know, I'm grateful for your leadership and patience 🙏  ";
       case "Me":
-        return `تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت🌸`;
+        return `تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت 🌸`;
       case "No Mention":
-        return "To you, There are things I wish I could say, but maybe they don't need to be spoken. Some feelings are meant to stay unshared — and that's okay. Just know, I was thinking of you. 💚";
+        return "To you, There are things I wish I could say, but maybe they don't need to be spoken. Some feelings are meant to stay unshared — and that's okay. Just know, I was thinking of you 💚";
       default:
         return "";
     }

@@ -15,7 +15,7 @@
   background: #fff;
   border-radius: 30px;
   padding: 4px 14px;
-  height: 50px;
+  height: 50 px;
   width: 500px;
   display: flex;
   align-items: center;
@@ -152,6 +152,10 @@
     width: 330px;
   }
 
+  .dropdown-toggle {
+    height: 40px;
+  }
+
   .selected-text {
     font-size: 16px;
   }
@@ -176,6 +180,10 @@
   .dropdown-toggle,
   .dropdown-menu {
     width: 300px;
+  }
+
+  .dropdown-toggle {
+    height: 35px;
   }
 
   .selected-text {
