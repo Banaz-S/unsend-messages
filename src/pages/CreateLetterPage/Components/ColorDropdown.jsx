@@ -52,7 +52,7 @@ function ColorDropdown({ onColorChange, isOpen, onToggle }) {
                 }`}
                 onClick={() => handleColorClick(color.name)}
               >
-                <span className={`color-dot ${color.name}`}></span>
+                <span className={`color-dots ${color.name}`}></span>
                 {color.label}
               </div>
             ))}

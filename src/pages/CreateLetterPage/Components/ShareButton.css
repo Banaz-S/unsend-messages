@@ -1,9 +1,9 @@
 .write-letter-btn {
   width: 530px;
-  margin-top: 30px;
+  margin-top: 40px;
   font-family: "Inter", sans-serif;
   font-size: 18px;
-  padding: 14px 46px;
+  padding: 16px 46px;
   border: none;
   border-radius: 32px;
   background-color: #ffd573;
@@ -67,34 +67,41 @@
   }
 }
 
+@media (max-width: 850px) {
+  .write-letter-btn {
+    width: 374px;
+    font-size: 16px;
+    padding: 14px 40px;
+  }
+}
+
 @media (max-width: 768px) {
   .write-letter-btn {
-    width: 350px;
-    font-size: 16px;
-    padding: 12px 40px;
+    width: 354px;
+    padding: 13px 40px;
   }
 }
 
 @media (max-width: 425px) {
   .write-letter-btn {
-    width: 320px;
+    width: 324px;
     font-size: 15px;
-    padding: 10px 32px;
+    padding: 14px 32px;
   }
 }
 
 @media (max-width: 375px) {
   .write-letter-btn {
-    width: 282px;
+    width: 284px;
     font-size: 14px;
-    padding: 10px 32px;
+    padding: 14px 32px;
   }
 }
 
 @media (max-width: 320px) {
   .write-letter-btn {
-    width: 242px;
+    width: 244px;
     font-size: 13px;
-    padding: 10px 32px;
+    padding: 14px 32px;
   }
 }

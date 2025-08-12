@@ -29,3 +29,17 @@
     margin: 0 auto;
   }
 }
+
+@media (max-width: 570px) {
+  .cards {
+    max-width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .cards img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

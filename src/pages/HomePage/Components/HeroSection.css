@@ -22,8 +22,7 @@ body {
 .content {
   flex: 1;
   max-width: 45%;
-  margin-left: 2%;
-  margin-top: 2%;
+  margin: 2% auto;
   z-index: 5;
 }
 
@@ -31,7 +30,7 @@ body {
   margin-top: -30px;
   font-family: "Bahij-Light", sans-serif;
   font-size: clamp(16px, 2.5vw, 26px);
-  color: #7c7c7c;
+  color: #585858;
 }
 
 .content h3 {
@@ -43,7 +42,7 @@ body {
 .btn-write-letter {
   margin-top: 10px;
   font-family: "Inter", sans-serif;
-  padding: 14px 46px;
+  padding: 18px 56px;
   border: none;
   border-radius: 32px;
   background-color: #ffdf93;
@@ -59,16 +58,26 @@ body {
 
 /* responsive for mobile */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-  }
-
   .content {
     max-width: 100%;
     margin: 20px auto;
+  }
+
+  .content p {
+    margin-top: 10px;
+  }
+
+  .btn-write-letter {
+    padding: 12px 36px;
+    font-size: 16px;
+  }
+}
+
+/* responsive for mobile */
+@media (max-width: 320px) {
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .content p {

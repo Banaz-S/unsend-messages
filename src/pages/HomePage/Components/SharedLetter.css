@@ -8,7 +8,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 32px;
   padding: 0 5%;
   width: 100%;
   max-width: 1300px;
@@ -60,7 +60,7 @@
 
 .shared-card-footer {
   position: absolute;
-  top: 290px;
+  top: 280px;
   left: 20px;
   padding: 6px 12px;
   font-size: 16px;
@@ -87,7 +87,7 @@
   color: #58d5b2;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1210px) {
   .shared-card img {
     width: 100%;
     height: 100%;
@@ -96,11 +96,11 @@
   }
 
   .shared-card-textarea {
-    font-size: 17px;
+    font-size: 16px;
     top: 40px;
     left: 18px;
-    right: 12px;
-    width: 250px;
+    right: 10px;
+    width: 230px;
     max-height: 180px;
     overflow-y: auto;
   }
@@ -113,21 +113,12 @@
 }
 
 @media (max-width: 1000px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
   .shared-card-textarea {
     font-size: 14px;
     top: 35px;
     left: 15px;
-    right: 12px;
-    width: 225px;
+    width: 200px;
     max-height: 130px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -138,21 +129,12 @@
 }
 
 @media (max-width: 900px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
   .shared-card-textarea {
-    font-size: 14px;
+    font-size: 13px;
     top: 26px;
-    left: 14px;
-    right: 12px;
-    width: 205px;
-    max-height: 140px;
-    overflow-y: auto;
+    left: 13px;
+    width: 190px;
+    max-height: 130px;
   }
 
   .shared-card-footer {
@@ -163,21 +145,11 @@
 }
 
 @media (max-width: 830px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
   .shared-card-textarea {
-    font-size: 13px;
     top: 24px;
     left: 14px;
-    right: 12px;
     width: 180px;
     max-height: 130px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -188,21 +160,12 @@
 }
 
 @media (max-width: 768px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
   .shared-card-textarea {
-    font-size: 12px;
-    top: 26px;
+    font-size: 11px;
+    top: 22px;
     left: 8px;
-    right: 10px;
-    width: 175px;
+    width: 155px;
     max-height: 140px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -215,12 +178,10 @@
 @media (max-width: 700px) {
   .shared-card-textarea {
     font-size: 10px;
-    top: 24px;
-    left: 10px;
-    right: 10px;
-    width: 150px;
+    top: 18px;
+    left: 8px;
+    width: 140px;
     max-height: 120px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -235,34 +196,28 @@
     font-size: 9px;
     top: 14px;
     left: 11px;
-    right: 10px;
-    width: 145px;
+    width: 135px;
     max-height: 90px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
-    top: 70%;
+    top: 73%;
     left: 6px;
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 
 @media (max-width: 610px) {
   .shared-card-textarea {
-    font-size: 9px;
     top: 14px;
-    left: 10px;
-    right: 10px;
-    width: 135px;
+    left: 4px;
+    width: 125px;
     max-height: 80px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
     top: 70%;
     left: 6px;
-    font-size: 8px;
   }
 }
 
@@ -276,10 +231,8 @@
     font-size: 12px;
     top: 26px;
     left: 12px;
-    right: 10px;
-    width: 200px;
+    width: 190px;
     max-height: 100px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
@@ -290,205 +243,75 @@
 }
 
 @media (max-width: 520px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
-    font-size: 12px;
-    top: 26px;
-    left: 12px;
-    right: 10px;
     width: 170px;
-    max-height: 100px;
-    overflow-y: auto;
-  }
-
-  .shared-card-footer {
-    top: 75%;
-    left: 12px;
-    font-size: 10px;
   }
 }
 
 @media (max-width: 470px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
-    font-size: 12px;
     top: 22px;
-    left: 12px;
-    right: 10px;
-    width: 170px;
-    max-height: 100px;
-    overflow-y: auto;
-  }
-
-  .shared-card-footer {
-    top: 75%;
-    left: 12px;
-    font-size: 10px;
   }
 }
 
 @media (max-width: 460px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
     font-size: 11px;
     top: 22px;
     left: 10px;
-    right: 10px;
     width: 160px;
-    max-height: 100px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
-    top: 75%;
     left: 10px;
-    font-size: 10px;
   }
 }
 
 @media (max-width: 440px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
     font-size: 10px;
     top: 20px;
-    left: 10px;
-    right: 10px;
     width: 150px;
-    max-height: 100px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
     top: 73%;
-    left: 10px;
     font-size: 9px;
   }
 }
 
 @media (max-width: 410px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
     font-size: 9px;
     top: 16px;
-    left: 10px;
-    right: 10px;
-    width: 140px;
-    max-height: 100px;
-    overflow-y: auto;
+    width: 130px;
   }
 
   .shared-card-footer {
-    top: 73%;
     left: 8px;
-    font-size: 9px;
   }
 }
 
 @media (max-width: 380px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
-    font-size: 9px;
     top: 14px;
     left: 8px;
-    right: 10px;
     width: 125px;
-    max-height: 100px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
-    top: 73%;
     left: 6px;
     font-size: 8px;
   }
 }
 
 @media (max-width: 350px) {
-  .shared-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-  }
-
   .shared-card-textarea {
     font-size: 8px;
-    top: 14px;
-    left: 8px;
-    right: 10px;
-    padding-inline-end: -19px;
     width: 110px;
-    max-height: 100px;
-    overflow-y: auto;
   }
 
   .shared-card-footer {
-    top: 73%;
-    left: 6px;
     font-size: 7px;
   }
 }

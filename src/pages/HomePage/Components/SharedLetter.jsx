@@ -65,7 +65,7 @@ const defaultLetters = [
   {
     id: "default-5",
     text: "",
-    color: "green",
+    color: "peach",
     border: "flower",
     mention: "Me",
     isDefault: true,
@@ -73,7 +73,7 @@ const defaultLetters = [
   {
     id: "default-6",
     text: "",
-    color: "peach",
+    color: "green",
     border: "canva",
     mention: "No Mention",
     isDefault: true,
@@ -86,7 +86,6 @@ function SharedLetter({ filterColor, filterTo }) {
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("sharedLetters")) || [];
     const now = new Date();
-
     const validLetters = stored.filter((letter) => {
       const createdAt = new Date(letter.createdAt);
       const ageInDays = (now - createdAt) / (1000 * 60 * 60 * 24);
@@ -117,9 +116,9 @@ function SharedLetter({ filterColor, filterTo }) {
       case "My Manager":
         return "Hello, Thank you for believing in me and guiding me through challenges - Your support has helped me grow more than you know, I'm grateful for your leadership and patience.🙏  ";
       case "Me":
-        return `تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت💚`;
+        return `تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت🌸`;
       case "No Mention":
-        return "To you, There are things I wish I could say, but maybe they don't need to be spoken. Some feelings are meant to stay unshared — and that's okay. Just know, I was thinking of you. 🌼";
+        return "To you, There are things I wish I could say, but maybe they don't need to be spoken. Some feelings are meant to stay unshared — and that's okay. Just know, I was thinking of you. 💚";
       default:
         return "";
     }

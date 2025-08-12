@@ -28,7 +28,7 @@ export default function SearchBar({
 }) {
   const [open, setOpen] = useState(false);
   const [inputValue, setInputValue] = useState("");
-  const [placeholder, setPlaceholder] = useState("Search letters...");
+  const [placeholder, setPlaceholder] = useState("Search for letters...");
   const wrapRef = useRef(null);
 
   // Open filters and clear input on focus & click
@@ -63,7 +63,7 @@ export default function SearchBar({
       setPlaceholder("Add tag...");
       setInputValue(""); // clear input when filters selected
     } else {
-      setPlaceholder("Search letters...");
+      setPlaceholder("Search for letters...");
       setInputValue(""); // reset when filters cleared
     }
   }, [selectedColor, selectedTo]);
