@@ -210,9 +210,9 @@
 @media (max-width: 610px) {
   .shared-card-textarea {
     top: 14px;
-    left: 4px;
-    width: 125px;
-    max-height: 80px;
+    left: 2px;
+    width: 130px;
+    max-height: 85px;
   }
 
   .shared-card-footer {
@@ -244,13 +244,18 @@
 
 @media (max-width: 520px) {
   .shared-card-textarea {
+    left: 10px;
     width: 170px;
+    max-height: 110px;
   }
 }
 
 @media (max-width: 470px) {
   .shared-card-textarea {
-    top: 22px;
+    top: 20px;
+    left: 10px;
+    width: 165px;
+    max-height: 120px;
   }
 }
 

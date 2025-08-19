@@ -29,75 +29,30 @@ const images = {
   "purple-flower": purple_flower,
 };
 
-const defaultLetters = [
-  {
-    id: "default-1",
-    text: "",
-    color: "pink",
-    border: "flower",
-    mention: "Stranger",
-    isDefault: true,
-  },
-  {
-    id: "default-2",
-    text: "",
-    color: "blue",
-    border: "canva",
-    mention: "A Friend",
-    isDefault: true,
-  },
-  {
-    id: "default-3",
-    text: "",
-    color: "purple",
-    border: "flower",
-    mention: "Mom",
-    isDefault: true,
-  },
-  {
-    id: "default-4",
-    text: "",
-    color: "grey",
-    border: "canva",
-    mention: "My Manager",
-    isDefault: true,
-  },
-  {
-    id: "default-5",
-    text: "",
-    color: "peach",
-    border: "flower",
-    mention: "Me",
-    isDefault: true,
-  },
-  {
-    id: "default-6",
-    text: "",
-    color: "green",
-    border: "canva",
-    mention: "No Mention",
-    isDefault: true,
-  },
-];
-
 function SharedLetter({ filterColor, filterTo }) {
   const [letters, setLetters] = useState([]);
 
-  useEffect(() => {
-    const stored = JSON.parse(localStorage.getItem("sharedLetters")) || [];
-    const now = new Date();
-    const validLetters = stored.filter((letter) => {
-      const createdAt = new Date(letter.createdAt);
-      const ageInDays = (now - createdAt) / (1000 * 60 * 60 * 24);
-      return ageInDays < 7;
-    });
+  const loadLetters = () => {
+    fetch("http://localhost:5000/letters")
+      .then((res) => res.json())
+      .then((data) => setLetters(data))
+      .catch((err) => console.error(err));
+  };
 
-    setLetters([...validLetters, ...defaultLetters]);
-    localStorage.setItem("sharedLetters", JSON.stringify(validLetters));
+  useEffect(() => {
+    loadLetters();
   }, []);
 
+  const ordered = [...letters].sort((a, b) => {
+    if (a.isDefault && !b.isDefault) return 1;
+    if (!a.isDefault && b.isDefault) return -1;
+    const da = new Date(a.createdAt || 0);
+    const db = new Date(b.createdAt || 0);
+    return db - da;
+  });
+
   // ===Apply filters===
-  const filteredLetters = letters.filter((letter) => {
+  const filteredLetters = ordered.filter((letter) => {
     const colorMatch =
       !filterColor || letter.color.toLowerCase() === filterColor.toLowerCase();
     const toMatch = !filterTo || letter.mention === filterTo;
@@ -108,15 +63,15 @@ function SharedLetter({ filterColor, filterTo }) {
     if (!letter.isDefault) return "";
     switch (letter.mention) {
       case "Stranger":
-        return "I don't know your story, but I hope today is kind to you, You matter more than you think — even when no one says it, Wishing you unexpected joy and quiet peace 💕 ";
+        return "I don't know your story, but I hope today is kind to you, You matter more than you think — even when no one says it, Wishing you unexpected joy and quiet peace 💕";
       case "A Friend":
         return "Thank you for being a light in both the calm and the storms, Your presence brings comfort and laughter that I truly cherish, I'm so lucky to have you in my life 🤍";
       case "Mom":
         return "دایکە، خۆشەویستی تۆ باشترینی منی درووست کردووە. تەنانەت گەر زۆریش وانەڵێم، بەس بزانە کە هەمیشە سوپاست دەکەم. خۆشم دەوێیت زیاتر لەوەی کە بتوانم بە وشە نیشانی بدەم ✨";
       case "My Manager":
-        return "Hello, Thank you for believing in me and guiding me through challenges - Your support has helped me grow more than you know, I'm grateful for your leadership and patience 🙏  ";
+        return "Hello, Thank you for believing in me and guiding me through challenges - Your support has helped me grow more than you know, I'm grateful for your leadership and patience 🙏";
       case "Me":
-        return `تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت 🌸`;
+        return "تۆ ماندووی؟ ئاساییە هەموو شتێک ئیهمال بکە و پشوویەک بدە، بەڵێن بێت بە یەک ڕۆژ پشوودان دواناکەویت 🌸";
       case "No Mention":
         return "To you, There are things I wish I could say, but maybe they don't need to be spoken. Some feelings are meant to stay unshared — and that's okay. Just know, I was thinking of you 💚";
       default:
@@ -150,7 +105,6 @@ function SharedLetter({ filterColor, filterTo }) {
             }}
             placeholder={getPlaceholder(letter)}
           />
-
           <p className={`shared-card-footer to ${letter.color}s`}>
             To: {letter.mention}
           </p>

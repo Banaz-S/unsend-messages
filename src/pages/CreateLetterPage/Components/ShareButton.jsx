@@ -16,29 +16,31 @@ function ShareButton({
 
   const isButtonDisabled = !letterText.trim() || !isChecked;
 
-  const handleClick = () => {
+  const handleClick = async () => {
     if (isButtonDisabled || isLoading) return;
-
-    const newLetter = {
-      id: Date.now(),
-      text: letterText,
-      color: selectedColor,
-      border: selectedBorder,
-      mention: selectedMention,
-      createdAt: new Date().toISOString(),
-    };
-
-    const existing = JSON.parse(localStorage.getItem("sharedLetters")) || [];
-    localStorage.setItem(
-      "sharedLetters",
-      JSON.stringify([newLetter, ...existing])
-    );
-
     setIsLoading(true);
 
-    setTimeout(() => {
-      navigate("/"); // Go to homepage
-    }, 1000);
+    try {
+      const res = await fetch("http://localhost:5000/letters", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: letterText,
+          color: selectedColor,
+          border: selectedBorder,
+          mention: selectedMention,
+        }),
+      });
+
+      if (!res.ok) throw new Error("Failed to save letter");
+
+      // Wait a short time for server to save before redirect
+      setTimeout(() => {
+        navigate("/");
+      }, 1500);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (

@@ -15,7 +15,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm start --prefix backend\" \"react-scripts start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -41,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.2.0",
     "gh-pages": "^6.3.0"
   }
 }
