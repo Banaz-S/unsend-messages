@@ -85,7 +85,7 @@ function SharedLetter({ filterColor, filterTo }) {
         <div key={letter.id} className="shared-card">
           <img
             src={images[`${letter.color}-${letter.border}`]}
-            alt="Card Image"
+            alt="Card-Image"
           />
           <textarea
             className="shared-card-textarea"
