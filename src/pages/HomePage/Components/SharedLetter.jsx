@@ -1,5 +1,6 @@
 import "./SharedLetter.css";
 import { useState, useEffect } from "react";
+import { API_BASE } from "../../..//apiBase";
 
 import blue_canva from "../../../assets/cards/blue-canva.svg";
 import blue_flower from "../../../assets/cards/blue-flower.svg";
@@ -33,7 +34,7 @@ function SharedLetter({ filterColor, filterTo }) {
   const [letters, setLetters] = useState([]);
 
   const loadLetters = () => {
-    fetch("http://localhost:5000/letters")
+    fetch(`${API_BASE}/letters`)
       .then((res) => res.json())
       .then((data) => setLetters(data))
       .catch((err) => console.error(err));
