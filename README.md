@@ -1,27 +1,26 @@
 # Unsend Messages
 
-Unsend Messages is a simple, responsive web app where users can anonymously share the letters they were about to send — but didn’t. Each letter can be addressed to someone (mention) and tagged with a color. Users can browse, filter shared letters by color or mention.
+A simple web app to write & share anonymous letters. Letters are tagged with a color and a “mention” (who it’s to), and they auto-expire.
 
 > ✉️ A place for the thoughts left unsaid.
 
-## ✨ Features
+## Live
+- **App:** https://banaz-s.github.io/unsend-messages/
+- **API:** https://unsend-messages.up.railway.app
 
-- Share unsent messages with a mention and color tag
-- Filter letters by color or mention using a search bar
-- Letters are visible for 7 days only
-- Stored in browser's Local Storage
-- Fully responsive for mobile, tablet, and desktop
-- Built with React and CSS
+## ✨ Features
+- Share letters with color + mention
+- Browse & filter by color or mention
+- Letters **expire automatically after 7 days** (configurable)
+- Mobile-friendly UI
 
 ## Tech Stack
+- **Frontend:** React (GitHub Pages)
+- **Backend:** Node/Express (Railway)
+- **Database:** PostgreSQL (Neon serverless)
 
-- Frontend: React, CSS
-- Storage: LocalStorage (no backend)
-- Build Tool: Create React App
-
-## Clone the Repository
-
+## Quick Start (local)
+1) Install deps:
 ```bash
-git clone https://github.com/Banaz-S/unsend-messages.git
-cd unsend-messages
-```
+npm install
+cd backend && npm install && cd ..
