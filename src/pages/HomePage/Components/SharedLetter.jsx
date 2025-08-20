@@ -1,6 +1,6 @@
 import "./SharedLetter.css";
 import { useState, useEffect } from "react";
-import { API_BASE } from "../../..//apiBase";
+import { API_BASE } from "../../../apiBase";
 
 import blue_canva from "../../../assets/cards/blue-canva.svg";
 import blue_flower from "../../../assets/cards/blue-flower.svg";
