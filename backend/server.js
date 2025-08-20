@@ -22,6 +22,9 @@ const pool = new Pool({
   ssl: isNeon ? { rejectUnauthorized: false } : undefined,
 });
 
+const allowed = ["https://banaz-s.github.io"];
+app.use(cors({ origin: allowed }));
+
 // quick check
 pool
   .connect()
@@ -192,6 +195,10 @@ app.post("/letters", async (req, res) => {
 /* optional: simple health check */
 app.get("/health", (req, res) => {
   res.json({ ok: true });
+});
+
+app.get("/", (req, res) => {
+  res.redirect("https://banaz-s.github.io/unsend-messages");
 });
 
 app.listen(PORT, () => {
