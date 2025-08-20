@@ -6,9 +6,23 @@ const { Pool } = require("pg");
 require("dotenv").config();
 
 const app = express();
-const PORT = 5000;
+// use env PORT if present (for hosting), else 5000 locally
+const PORT = process.env.PORT || 5000;
 
-const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+/* ======================
+   PostgreSQL connection
+   ====================== */
+const isNeon =
+  /\bneon\.tech\b/.test(process.env.DATABASE_URL || "") ||
+  /sslmode=require/.test(process.env.DATABASE_URL || "");
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  // Neon (and many hosted PGs) require SSL
+  ssl: isNeon ? { rejectUnauthorized: false } : undefined,
+});
+
+// quick check
 pool
   .connect()
   .then((c) => {
@@ -19,6 +33,9 @@ pool
     console.error("❌ PostgreSQL connection error:", err.message)
   );
 
+/* ======================
+   Defaults (not in DB)
+   ====================== */
 const defaultLetters = [
   {
     id: "default-1",
@@ -73,7 +90,9 @@ const defaultLetters = [
 app.use(cors());
 app.use(bodyParser.json());
 
-// Read TTL each time with clear logic + logging
+/* ======================
+   TTL / Cleanup helpers
+   ====================== */
 function getTtlConfig() {
   const raw = process.env.TTL_MINUTES;
   const minutes = Number(raw);
@@ -83,22 +102,23 @@ function getTtlConfig() {
   return { mode: "days", value: 7 };
 }
 
-// Delete user letters older than TTL
+// Delete user letters older than TTL (defaults to 7 days)
 async function cleanupLetters() {
   const ttl = getTtlConfig();
   try {
     if (ttl.mode === "minutes") {
       console.log(`🧹 Cleanup using TTL: ${ttl.value} minute(s)`);
+      // safer arithmetic: $1 * INTERVAL '1 minute'
       await pool.query(
         `DELETE FROM letters
-         WHERE created_at < (NOW() - make_interval(mins => $1))`,
+         WHERE created_at < NOW() - ($1::int * INTERVAL '1 minute')`,
         [ttl.value]
       );
     } else {
       console.log(`🧹 Cleanup using TTL: ${ttl.value} day(s)`);
       await pool.query(
         `DELETE FROM letters
-         WHERE created_at < (NOW() - INTERVAL '7 days')`
+         WHERE created_at < NOW() - INTERVAL '7 days'`
       );
     }
   } catch (e) {
@@ -108,6 +128,10 @@ async function cleanupLetters() {
 
 // Run cleanup nightly; also when listing letters
 cron.schedule("0 0 * * *", cleanupLetters);
+
+/* =============
+   API routes
+   ============= */
 
 // GET all letters (newest user letters first, then defaults)
 app.get("/letters", async (req, res) => {
@@ -137,7 +161,7 @@ app.get("/letters", async (req, res) => {
   }
 });
 
-// POST a new letter (let DB set created_at = now())
+// POST a new letter (DB sets created_at = now() via DEFAULT)
 app.post("/letters", async (req, res) => {
   const { text, color, border, mention } = req.body;
   if (!text || !color || !border || !mention) {
@@ -163,6 +187,11 @@ app.post("/letters", async (req, res) => {
     console.error(err);
     res.status(500).json({ error: "Failed to add letter" });
   }
+});
+
+/* optional: simple health check */
+app.get("/health", (req, res) => {
+  res.json({ ok: true });
 });
 
 app.listen(PORT, () => {
