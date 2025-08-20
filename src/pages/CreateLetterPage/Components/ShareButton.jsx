@@ -2,6 +2,7 @@ import "./ShareButton.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import loadingIcon from "../../../assets/icons/loading-blue.svg";
+import { API_BASE } from "../../..//apiBase";
 
 function ShareButton({
   letterText,
@@ -21,7 +22,7 @@ function ShareButton({
     setIsLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/letters", {
+      const res = await fetch(`${API_BASE}/letters`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
