@@ -5,8 +5,7 @@ A simple web app to write & share anonymous letters. Letters are tagged with a c
 > ✉️ A place for the thoughts left unsaid.
 
 ## Live
-- **App:** https://banaz-s.github.io/unsend-messages/
-- **API:** https://unsend-messages.up.railway.app
+- **App:** https://unsend-messages.up.railway.app
 
 ## ✨ Features
 - Share letters with color + mention
