@@ -38,7 +38,7 @@ function ShareButton({
       // Wait a short time for server to save before redirect
       setTimeout(() => {
         navigate("/");
-      }, 1000);
+      }, 0);
     } catch (err) {
       console.error(err);
     }
