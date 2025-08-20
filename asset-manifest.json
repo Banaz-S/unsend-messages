@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/unsend-messages/static/css/main.8891b46c.css",
-    "main.js": "/unsend-messages/static/js/main.8835f80b.js",
+    "main.js": "/unsend-messages/static/js/main.483c0e79.js",
     "static/css/219.96fd1f6f.chunk.css": "/unsend-messages/static/css/219.96fd1f6f.chunk.css",
     "static/js/219.d65b1e1a.chunk.js": "/unsend-messages/static/js/219.d65b1e1a.chunk.js",
     "static/css/706.1f70186c.chunk.css": "/unsend-messages/static/css/706.1f70186c.chunk.css",
-    "static/js/706.8ac0247e.chunk.js": "/unsend-messages/static/js/706.8ac0247e.chunk.js",
+    "static/js/706.2b7030b9.chunk.js": "/unsend-messages/static/js/706.2b7030b9.chunk.js",
     "static/js/435.1dd71bf1.chunk.js": "/unsend-messages/static/js/435.1dd71bf1.chunk.js",
     "static/media/cards.svg": "/unsend-messages/static/media/cards.832f7c3589277d08a399c535a3493f92.svg",
     "static/media/pink-flower.svg": "/unsend-messages/static/media/pink-flower.b1c5db1d28ae103140d9ba55f23ac9e0.svg",
@@ -32,15 +32,15 @@
     "static/media/arrow-up.svg": "/unsend-messages/static/media/arrow-up.675db532012ee53fbf3b65cd18db60d3.svg",
     "static/media/arrow-down.svg": "/unsend-messages/static/media/arrow-down.8f013cd1d1ea3966d6504c559ba4b4c2.svg",
     "main.8891b46c.css.map": "/unsend-messages/static/css/main.8891b46c.css.map",
-    "main.8835f80b.js.map": "/unsend-messages/static/js/main.8835f80b.js.map",
+    "main.483c0e79.js.map": "/unsend-messages/static/js/main.483c0e79.js.map",
     "219.96fd1f6f.chunk.css.map": "/unsend-messages/static/css/219.96fd1f6f.chunk.css.map",
     "219.d65b1e1a.chunk.js.map": "/unsend-messages/static/js/219.d65b1e1a.chunk.js.map",
     "706.1f70186c.chunk.css.map": "/unsend-messages/static/css/706.1f70186c.chunk.css.map",
-    "706.8ac0247e.chunk.js.map": "/unsend-messages/static/js/706.8ac0247e.chunk.js.map",
+    "706.2b7030b9.chunk.js.map": "/unsend-messages/static/js/706.2b7030b9.chunk.js.map",
     "435.1dd71bf1.chunk.js.map": "/unsend-messages/static/js/435.1dd71bf1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8891b46c.css",
-    "static/js/main.8835f80b.js"
+    "static/js/main.483c0e79.js"
   ]
 }
