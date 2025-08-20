@@ -19,8 +19,4 @@ A simple web app to write & share anonymous letters. Letters are tagged with a c
 - **Backend:** Node/Express (Railway)
 - **Database:** PostgreSQL (Neon serverless)
 
-## Quick Start (local)
-1) Install deps:
-```bash
-npm install
-cd backend && npm install && cd ..
+
