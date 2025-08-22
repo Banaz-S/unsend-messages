@@ -112,7 +112,7 @@ npm test          # Run tests
 
 ### Letter Creation
 
-- **Color Themes**: Choose from 8 beautiful color schemes
+- **Color Themes**: Choose from 6 beautiful color schemes
 - **Border Styles**: Multiple border designs to match your mood
 - **Personalization**: Add recipient names and personal messages
 - **Preview**: See your letter before sharing
