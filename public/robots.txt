@@ -1,4 +1,3 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://banaz-s.github.io/unsend-messages/sitemap.xml
