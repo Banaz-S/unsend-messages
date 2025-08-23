@@ -155,10 +155,10 @@ cron.schedule("0 0 * * *", cleanupLetters);
 /* =============
    API routes
    ============= */
-app.get("/", (_req, res) => {
-  // simple landing so hitting root on Railway is friendly
-  res.send("Unsend Messages API is running. Try GET /letters");
-});
+// app.get("/", (_req, res) => {
+//   // simple landing so hitting root on Railway is friendly
+//   res.send("Unsend Messages API is running. Try GET /letters");
+// });
 
 app.get("/health", (_req, res) => res.json({ ok: true }));
 
