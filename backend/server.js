@@ -215,6 +215,10 @@ app.post("/letters", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.redirect("https://banaz-s.github.io/unsend-messages");
+});
+
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
