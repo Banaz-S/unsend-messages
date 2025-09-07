@@ -15,11 +15,19 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 15px;
   width: fit-content;
+  height: 100%;
   margin: 0 auto;
 }
 
 .right {
   margin-top: 20px;
+}
+
+@media (min-width: 2200px) {
+  .grid-layout {
+    gap: 15px;
+    margin-top: 70px;
+  }
 }
 
 @media (max-width: 1225px) {

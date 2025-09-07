@@ -19,7 +19,7 @@
 .shared-card {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   border-radius: 20px;
   overflow: hidden;
   z-index: 10;
@@ -42,7 +42,7 @@
   top: 50px;
   left: 30px;
   right: 20px;
-  height: calc(1.5em * 6);
+  height: calc(2em * 6);
   border: none;
   outline: none;
   border-radius: 10px;
@@ -54,13 +54,19 @@
   line-height: 1.5em;
   max-height: 220px;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   color: #454545;
   background: transparent;
 }
 
+.shared-card-textarea::-webkit-scrollbar {
+  display: none;
+}
+
 .shared-card-footer {
   position: absolute;
-  top: 280px;
+  top: 275px;
   left: 20px;
   padding: 6px 12px;
   font-size: 16px;
@@ -118,7 +124,7 @@
     top: 35px;
     left: 15px;
     width: 200px;
-    max-height: 130px;
+    max-height: 150px;
   }
 
   .shared-card-footer {
@@ -134,7 +140,7 @@
     top: 26px;
     left: 13px;
     width: 190px;
-    max-height: 130px;
+    max-height: 140px;
   }
 
   .shared-card-footer {
@@ -165,7 +171,7 @@
     top: 22px;
     left: 8px;
     width: 155px;
-    max-height: 140px;
+    max-height: 120px;
   }
 
   .shared-card-footer {
@@ -181,7 +187,7 @@
     top: 18px;
     left: 8px;
     width: 140px;
-    max-height: 120px;
+    max-height: 100px;
   }
 
   .shared-card-footer {
@@ -197,7 +203,7 @@
     top: 14px;
     left: 11px;
     width: 135px;
-    max-height: 90px;
+    max-height: 100px;
   }
 
   .shared-card-footer {
@@ -210,9 +216,8 @@
 @media (max-width: 610px) {
   .shared-card-textarea {
     top: 14px;
-    left: 2px;
     width: 130px;
-    max-height: 85px;
+    max-height: 90px;
   }
 
   .shared-card-footer {
@@ -232,7 +237,7 @@
     top: 26px;
     left: 12px;
     width: 190px;
-    max-height: 100px;
+    max-height: 145px;
   }
 
   .shared-card-footer {
@@ -246,7 +251,7 @@
   .shared-card-textarea {
     left: 10px;
     width: 170px;
-    max-height: 110px;
+    max-height: 130px;
   }
 }
 
@@ -255,7 +260,6 @@
     top: 20px;
     left: 10px;
     width: 165px;
-    max-height: 120px;
   }
 }
 
@@ -265,6 +269,7 @@
     top: 22px;
     left: 10px;
     width: 160px;
+    max-height: 125px;
   }
 
   .shared-card-footer {
@@ -277,6 +282,7 @@
     font-size: 10px;
     top: 20px;
     width: 150px;
+    max-height: 115px;
   }
 
   .shared-card-footer {
@@ -290,6 +296,7 @@
     font-size: 9px;
     top: 16px;
     width: 130px;
+    max-height: 90px;
   }
 
   .shared-card-footer {
@@ -314,6 +321,7 @@
   .shared-card-textarea {
     font-size: 8px;
     width: 110px;
+    max-height: 80px;
   }
 
   .shared-card-footer {
