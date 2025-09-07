@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/unsend-messages/static/css/main.8891b46c.css",
-    "main.js": "/unsend-messages/static/js/main.eab99049.js",
-    "static/css/219.3214d957.chunk.css": "/unsend-messages/static/css/219.3214d957.chunk.css",
+    "main.js": "/unsend-messages/static/js/main.a4c0294e.js",
+    "static/css/219.576e457f.chunk.css": "/unsend-messages/static/css/219.576e457f.chunk.css",
     "static/js/219.d63e66a8.chunk.js": "/unsend-messages/static/js/219.d63e66a8.chunk.js",
-    "static/css/706.1930549a.chunk.css": "/unsend-messages/static/css/706.1930549a.chunk.css",
+    "static/css/706.7f9c1abc.chunk.css": "/unsend-messages/static/css/706.7f9c1abc.chunk.css",
     "static/js/706.5f1494d0.chunk.js": "/unsend-messages/static/js/706.5f1494d0.chunk.js",
     "static/js/363.cd484389.chunk.js": "/unsend-messages/static/js/363.cd484389.chunk.js",
     "static/media/cards.svg": "/unsend-messages/static/media/cards.832f7c3589277d08a399c535a3493f92.svg",
@@ -32,15 +32,15 @@
     "static/media/arrow-up.svg": "/unsend-messages/static/media/arrow-up.675db532012ee53fbf3b65cd18db60d3.svg",
     "static/media/arrow-down.svg": "/unsend-messages/static/media/arrow-down.8f013cd1d1ea3966d6504c559ba4b4c2.svg",
     "main.8891b46c.css.map": "/unsend-messages/static/css/main.8891b46c.css.map",
-    "main.eab99049.js.map": "/unsend-messages/static/js/main.eab99049.js.map",
-    "219.3214d957.chunk.css.map": "/unsend-messages/static/css/219.3214d957.chunk.css.map",
+    "main.a4c0294e.js.map": "/unsend-messages/static/js/main.a4c0294e.js.map",
+    "219.576e457f.chunk.css.map": "/unsend-messages/static/css/219.576e457f.chunk.css.map",
     "219.d63e66a8.chunk.js.map": "/unsend-messages/static/js/219.d63e66a8.chunk.js.map",
-    "706.1930549a.chunk.css.map": "/unsend-messages/static/css/706.1930549a.chunk.css.map",
+    "706.7f9c1abc.chunk.css.map": "/unsend-messages/static/css/706.7f9c1abc.chunk.css.map",
     "706.5f1494d0.chunk.js.map": "/unsend-messages/static/js/706.5f1494d0.chunk.js.map",
     "363.cd484389.chunk.js.map": "/unsend-messages/static/js/363.cd484389.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8891b46c.css",
-    "static/js/main.eab99049.js"
+    "static/js/main.a4c0294e.js"
   ]
 }
